@@ -1,0 +1,26 @@
+.bg-video {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.h-bg-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.bg-video::before {
+  content: "";
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background: #000;
+  opacity: 30%;
+}

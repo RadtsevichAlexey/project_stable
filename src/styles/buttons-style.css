@@ -1,0 +1,26 @@
+.buttons_style {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+
+  position: absolute;
+  display: inline-block;
+  padding: 15px 30px;
+
+  color:#fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+  outline: none;
+
+  transition: 0.3s;
+  z-index: 0;
+}

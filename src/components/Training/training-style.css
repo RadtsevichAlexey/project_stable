@@ -1,0 +1,71 @@
+.training-prog {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 12vh;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: -1;
+}
+h4 {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.text-table {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 3%;
+}
+table {
+  min-width: 900px;
+  border-collapse: collapse;
+  border: 2px solid #fff;
+}
+th, tr {
+  border: 1px solid #fff;
+}
+/*--------------------------------*/
+.traning-style-next a,
+.traning-style-back a {
+  position: fixed;
+  object-fit: cover;
+  width: 10%;
+  top: 15%;
+  transform: translate(-50%, 0);
+  transition: 0.2s;
+}
+.traning-style-next a {
+  left: 85%;
+}
+.traning-style-back a {
+  left: 15%;
+}
+.traning-style-next a:hover,
+.traning-style-back a:hover,
+.to-up-style a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+.to-up-style a {
+  padding: 12px 40px;
+  font-size: 16px;
+  object-fit: cover;
+  font-weight:normal;
+  position: relative;
+  margin-bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media screen and (max-width: 1670px) {
+  .traning-style-next a {
+    left: 15%;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .traning-style-next a,
+  .traning-style-back a {
+    left: 7%;
+  }
+}

@@ -1,0 +1,39 @@
+.new_task {
+  width: 40%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(61, 61, 61), 0 0 40px rgb(61, 61, 61);
+  left: 30%;
+  top: 15vh;
+  transform: translate(0, 0);
+  position: absolute;
+  background: rgba(48, 48, 48, 0.5);
+  font-family: Calibri, sans-serif;
+  letter-spacing: 4px;
+}
+
+.input_new_task {
+  letter-spacing: 4px;
+  font-family: Calibri, sans-serif;
+  margin: 30px 40px;
+  text-align: center;
+}
+.input_new_task textarea {
+  border-radius: 10px;
+  letter-spacing: 4px;
+  font-family: Calibri, sans-serif;
+  padding: 10px;
+  width: 100%;
+  color:#fff;
+  font-size: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.60);
+  box-sizing: border-box;
+  resize: none;
+}
+.input_new_task textarea:focus {
+  box-shadow: 0 0 10px rgb(61, 61, 61), 0 0 40px rgb(61, 61, 61);
+  transition-delay: 0.1s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

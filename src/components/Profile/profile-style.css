@@ -1,0 +1,55 @@
+.profile-style-out a,
+.profile-style-edit a {
+  width: 20%;
+  top: 87%;
+}
+.profile-style-out a {
+  left: 85%;
+  transform: translate(-50%, 0);
+}
+.profile-style-edit a {
+  left: 15%;
+  transform: translate(-50%, 0);
+}
+.profile-style-out a:hover,
+.profile-style-edit a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+.profile-text {
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+
+  color: rgb(146, 146, 146);
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+.profile-box {
+  left: 50%;
+  top: 45%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000, 0 0 40px #000, 0 0 80px #000, 0 0 130px #000;
+  background: rgba(46, 46, 46, 0.7);
+}
+.profile-text output {
+  color: #fff;
+  padding-left: 5%;
+  font-size: 30px;
+}
+.profile-text p {
+  padding-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .profile-style-out a,
+  .profile-style-edit a {
+    width: 25%;
+  }
+}

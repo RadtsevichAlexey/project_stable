@@ -1,0 +1,120 @@
+<template>
+  <div id="app">
+    <!--<router-link :to="{name: 'MainProfile'}" class>YouDiary</router-link>-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <nav class="nav-style">
+      <div class="l">
+        <h4>
+          <router-link :to="{name: 'MainProfile'}"></router-link>
+          YouDiary
+        </h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a>
+            <router-link :to="{name: 'MainProfile'}"></router-link>
+            Profile
+          </a>
+        </li>
+        <li>
+          <a>
+            <router-link :to="{name: 'MainProfile'}"></router-link>
+            Statistics
+          </a>
+        </li>
+        <li>
+          <a>
+            <router-link :to="{name: 'MainProfile'}"></router-link>
+            Tasks
+          </a>
+        </li>
+        <li>
+          <a>
+            <router-link :to="{name: 'MainProfile'}"></router-link>
+            Training
+          </a>
+        </li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <div id="s-MainProfile">
+      <img src="../../../public/img/bg-picrures/main_fon.jpg">
+    </div>
+  </div>
+</template>
+
+<script>
+
+import MainProfile from '@/components/MainProfile/MainProfile.vue'
+import { navSlide } from './nav.js'
+
+export default {
+  name: 'MainProfile',
+  components: { MainProfile },
+  methods: {
+    navig: function () {
+      navSlide()
+    }
+  }
+}
+
+</script>
+
+<style>
+
+@import '../../styles/nav-style.css';
+
+</style>
+
+<!--*************************************************-->
+<script>
+  import navSlide from './nav.js'
+
+  export default {
+    name: 'Navbar',
+    components: navSlide,
+    data () {
+      return {
+        burger: '',
+        nav: '',
+        navLinks: ''
+      }
+    },
+    methods: {
+      navSlideClick () {
+        this.burger = document.querySelector('.burger')
+        this.nav = document.querySelector('.nav-links')
+        this.navLinks = document.querySelectorAll('.nav-links li')
+        console.log([ this.burger, this.nav, this.navLinks ])
+
+        this.$emit('navSlide()', [ this.burger, this.nav, this.navLinks ])
+      }
+      /* navSlideClick () {
+        const burger = document.querySelector('.burger')
+        const nav = document.querySelector('.nav-links')
+        const navLinks = document.querySelectorAll('.nav-links li')
+
+        nav.classList.toggle('nav-active')
+
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = ''
+          } else {
+            link.style.animation = `navLinkFade 0.3s ease forwards ${index / 7 + 0.7}s`
+          }
+        })
+
+        burger.classList.toggle('toggle')
+      } */
+    }
+  }
+
+  </script>
